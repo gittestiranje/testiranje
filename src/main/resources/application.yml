@@ -1,6 +1,13 @@
 app:
   name: testiranje
   description: ${app.name} is a Spring Boot application
+logging:
+  path: /var/log
+  file: testiranje-prod.log
+  level:
+    org:
+      springframework.web: DEBUG
+      hibernate: ERROR
 spring:
   profiles:
-    active: dev,prod
+    active: dev
