@@ -1,0 +1,6 @@
+app:
+  name: testiranje
+  description: ${app.name} is a Spring Boot application
+spring:
+  profiles:
+    active: dev,prod
