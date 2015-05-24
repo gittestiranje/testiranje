@@ -11,6 +11,13 @@ logging:
 server:
   port: 8080
   sessionTimeout: 1800
+security:
+  user:
+    password: test
 spring:
+  datasource:
+    url: jdbc:mysql://localhost/testiranje
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
   profiles:
     active: dev
