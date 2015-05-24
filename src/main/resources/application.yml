@@ -8,6 +8,9 @@ logging:
     org:
       springframework.web: DEBUG
       hibernate: ERROR
+server:
+  port: 8080
+  sessionTimeout: 1800
 spring:
   profiles:
     active: dev
